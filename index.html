@@ -15,12 +15,13 @@
               <img src="svg/noemi-logo.svg" alt="Логотип" class="logo_img">
             </a>
             <nav class="menu">
-              <ul class="menu_list">
+              <div class="button">
                 <input id="menu_button" type="checkbox">
                 <label for="menu_button" class="menu_btn">
                   <span class="menu_button_text">Открыть меню</span>
                 </label>
-                <div class="menu_list_btn">
+              </div>
+              <ul class="menu_list">
                 <li class="menu_item">
                   <a href="#0" class="menu_link">Главная</a>
                 </li>
@@ -39,7 +40,6 @@
                 <li class="menu_item">
                   <a href="#0" class="menu_link">Контакты</a>
                 </li>
-              </div>
               </ul>
             </nav>
           </div>
@@ -48,8 +48,8 @@
       </header>
       <div class="trande_content">
         <h3 class="trande_content_title">сейчас в тренде</h3>
-        <div class="trand">
-          <article class="trand_card trand1">
+        <section class="trand">
+          <article class="trand_card trand_card-trand1">
             <div class="trand_card_subject">
               <ul class="trand_card_title">
                 <li class="trand_card_title_category">
@@ -64,7 +64,7 @@
               </div>
             </div>
           </article>
-          <article class="trand_card trand2">
+          <article class="trand_card trand_card-trand2">
             <div class="trand_card_subject">
               <ul class="trand_card_title">
                 <li class="trand_card_title_category">
@@ -76,7 +76,7 @@
               </div>
             </div>
           </article>
-          <article class="trand_card trand3">
+          <article class="trand_card trand_card-trand3">
             <div class="trand_card_subject">
               <ul class="trand_card_title">
                 <li class="trand_card_title_category">
@@ -91,7 +91,7 @@
               </div>
             </div>
           </article>
-          <article class="trand_card trand4">
+          <article class="trand_card trand_card-trand4">
             <div class="trand_card_subject">
               <ul class="trand_card_title">
                 <li class="trand_card_title_category">
@@ -106,7 +106,7 @@
               </div>
             </div>
           </article>
-        </div>
+        </section>
       </div>
       <div class="content">
         <div class="content_wrapper">
@@ -377,10 +377,10 @@
           </aside>
         </div>
       </div>
-      <div class="shop">
+      <section class="shop">
         <h3 class="shop_content_title">наши изделия</h3>
         <div class="shop_wrap">
-          <div class="shop_body shop1">
+          <article class="shop_body shop_body-shop1">
             <div class="shop_subject">
               <div class="shop_card_content">
                 <h3 class="shop_card_title">Подушки на диван</h3>
@@ -400,8 +400,8 @@
                 <button class="shop_button" type="button">В магазин</button>
               </footer>
             </div>
-          </div>
-          <div class="shop_body shop2">
+          </article>
+          <article class="shop_body shop_body-shop2">
             <div class="shop_subject">
               <div class="shop_card_content">
                 <h3 class="shop_card_title">Кукла «Зайчик»</h3>
@@ -417,8 +417,8 @@
                 <button class="shop_button" type="button">В магазин</button>
               </footer>
             </div>
-          </div>
-          <div class="shop_body shop3">
+          </article>
+          <article class="shop_body shop_body-shop3">
             <div class="shop_subject">
               <div class="shop_card_content">
                 <h3 class="shop_card_title">Шестиугольная рамка</h3>
@@ -438,9 +438,9 @@
                 <button class="shop_button" type="button">В магазин</button>
               </footer>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
       <footer class="footer">
         <div class="footer_wrapper">
           <address class="socials">
@@ -467,6 +467,5 @@
           </div>
         </div>
       </footer>
-      <div class=""></div>
 </body>
 </html>
