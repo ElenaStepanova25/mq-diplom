@@ -8,6 +8,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="hidden">
+      <div class="hidden_pop_up">
+         <a href="#0" id="open_pop_up">Открыть</a>
+      </div>
+      <div class="pop_up">
+         <div class="pop_up_conteiner">
+             <div class="pop_up_body">
+                 <span class="pop_up_title">Ваш фидбек</span>
+          <form class="form_group_pop_up">
+            <div class="form_group">
+              <label class="select_group">
+                <span class="select_label">Как часто вы заходите на сайт?</span>
+                <select class="select">
+                  <option value="" selected>Почти каждый день</option>
+                  <option value="">Раз в несколько дней</option>
+                  <option value="">Раз в несколько недель</option>
+                  <option value="">Несколько раз в год</option>
+                </select>
+              </label>
+            </div>
+            <div class="form_group">
+              <div class="radio_content">
+                <span class="radio_text">Вы подписаны на e-mail рассылку?</span>
+              </div>
+              <div>
+                <label for="radio_group" class="radio_group">
+                  <input type="radio" class="radio" id="radio" name="radio_choice" value="yes" checked />
+                  <span class="radio_group_text">Да</span>
+                </label>
+                <label for="radio_group" class="radio_group">
+                  <input type="radio" class="radio" id="radio" name="radio_choice" value="no">
+                  <span class="radio_group_text">Нет</span>
+                </label>
+              </div>
+            </div>
+            <div class="form_group">
+              <label class="field_group">
+                <span class="field_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+              </label>
+            </div>
+            <button class="button_popup">отправить</button>
+          </form>
+        </div>
+        <div class="pop_up_close">
+          <span class="pop_up_close_form">Закрыть</span>
+       </div>
+      </div>
+      </div>
+    </div>
     <header class="header">
         <div class="container">
           <div class="top">
@@ -45,8 +95,8 @@
           </div>
           <h1 class="header_title">Блог о творчестве, спорте и образе жизни</h1>
         </div>
-      </header>
-      <div class="trande_content">
+    </header>
+    <div class="trande_content">
         <h3 class="trande_content_title">сейчас в тренде</h3>
         <section class="trand">
           <article class="trand_card trand_card-trand1">
@@ -107,8 +157,8 @@
             </div>
           </article>
         </section>
-      </div>
-      <div class="content">
+    </div>
+    <div class="content">
         <div class="content_wrapper">
           <main class="news">
             <article class="card">
@@ -376,11 +426,25 @@
             </section>
           </aside>
         </div>
-      </div>
-      <section class="shop">
+    </div>
+    <section class="shop">
         <h3 class="shop_content_title">наши изделия</h3>
         <div class="shop_wrap">
-          <article class="shop_body shop_body-shop1">
+          <article class="shop_body">
+            <div class="img_shop">
+              <picture>
+                <source
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile1.jpg">
+                <source
+                media="(max-width: 1199px)"
+                srcset="images/shop-item-tablet1.jpg">
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk1.jpg">
+                <img src="images/shop-item-desk1.jpg" alt="shop-picture">
+              </picture>
+            </div>
             <div class="shop_subject">
               <div class="shop_card_content">
                 <h3 class="shop_card_title">Подушки на диван</h3>
@@ -401,8 +465,22 @@
               </footer>
             </div>
           </article>
-          <article class="shop_body shop_body-shop2">
-            <div class="shop_subject">
+          <article class="shop_body">
+            <div class="img_shop">
+              <picture>
+                <source
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile2.jpg">
+                <source
+                media="(max-width: 1199px)"
+                srcset="images/shop-item-tablet2.jpg">
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk2.jpg">
+                <img src="images/shop-item-desk2.jpg" alt="shop-picture">
+              </picture>
+            </div>
+             <div class="shop_subject">
               <div class="shop_card_content">
                 <h3 class="shop_card_title">Кукла «Зайчик»</h3>
                 <p class="shop_card_text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="shop_card_link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -418,7 +496,21 @@
               </footer>
             </div>
           </article>
-          <article class="shop_body shop_body-shop3">
+          <article class="shop_body">
+            <div class="img_shop">
+              <picture>
+                <source
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile3.jpg">
+                <source
+                media="(max-width: 1199px)"
+                srcset="images/shop-item-tablet3.jpg">
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk3.jpg">
+                <img src="images/shop-item-desk3.jpg" alt="shop-picture">
+              </picture>
+            </div>
             <div class="shop_subject">
               <div class="shop_card_content">
                 <h3 class="shop_card_title">Шестиугольная рамка</h3>
@@ -440,8 +532,8 @@
             </div>
           </article>
         </div>
-      </section>
-      <footer class="footer">
+    </section>
+    <footer class="footer">
         <div class="footer_wrapper">
           <address class="socials">
             <ul class="socials_logo">
@@ -466,6 +558,6 @@
             <a href="#" class="copyrights_link">Copyright © 2009–2019 City Blog LLC.</a>
           </div>
         </div>
-      </footer>
+    </footer>
 </body>
 </html>
