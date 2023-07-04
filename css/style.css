@@ -42,6 +42,201 @@ figure {
   margin: 0;
 }
 
+/*================POPUP================*/
+/*.hidden {
+ display: none;
+}*/
+
+.hidden_pop_up { 
+  display: none;
+}
+
+.pop_up {
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ left: 0;
+ top: 0;
+ background-color: black;
+ opacity: 0.6;
+ z-index: 2;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.pop_up_conteiner {
+ display: flex;
+ width: 390px;
+ height: 589px;
+ position: relative;
+}
+
+.pop_up_body {
+ margin: auto auto;
+ width: 100%;
+ height: 100%;
+ background-color: #fff;
+ padding: 30px;
+ 
+}
+
+.form_group:not(:last-child) {
+ margin-bottom: 30px;
+}
+
+.pop_up_title {
+ font-size: 20px;
+ text-transform: uppercase;
+ color: #0f0d0e;
+ font-weight: 700;
+ text-align: center;
+ display: block;
+ margin: auto auto;
+}
+
+.pop_up_title::after {
+ content: "";
+ display: block;
+ opacity: 0.4;
+ width: 66px;
+ height: 3px;
+ background-color: #b59f5b;
+ margin: auto auto;
+ margin-top: 14px;
+ margin-bottom: 30px;
+}
+
+.pop_up_close {
+ width: 18px;
+ height: 18px;
+ border: 0;
+ cursor: pointer;
+ background-image: url('../svg/form-x.svg');
+ background-repeat: no-repeat;
+ background-size: 18px;
+ background-color: #000;
+ position: absolute;
+ right: 0;
+ top: -25px;
+}
+
+.pop_up_close_form {
+ display: none;
+}
+
+.select_label,
+.radio_text,
+.radio_group_text,
+.field_label{
+ font-size: 13px;
+ color: #000000;
+ font-weight: 400;
+}
+
+.radio_group_text {
+ padding-right: 10px; 
+}
+
+.select {
+ opacity: 0.541;
+ font-size: 13px;
+ line-height: 3;
+ color: #000000;
+ font-weight: 400;
+ padding-left: 19px;
+ padding-right: 19px;
+ border: none;
+ outline: none;
+ width: 100%;
+ height: 48px;
+ margin-top: 10px;
+ -webkit-appearance: none;
+ background-image: url('../svg/form-arrows.svg');
+ background-size: 10px;
+ background-repeat: no-repeat;
+ background-position: right 10px center;
+ background-color: #f4f7f6;
+}
+
+.select:hover {
+ width: 100%;
+ height: 48px;
+ background-color: #f4f7f6;
+}
+
+.select:focus {
+ width: 100%;
+ height: 48px;
+ background-color: #f4f7f6;
+ border: 1px solid #b59f5b;
+}
+
+.radio_group_text::before {
+ content: "";
+ display: inline-block;
+ width: 15px;
+ height: 15px;
+ background-image: url('../svg/form-empty-circle.svg');
+ background-repeat: no-repeat;
+ background-size: 15px;
+ background-position: center center;
+ margin-right: 5px;
+ vertical-align: middle;
+}
+
+.radio:checked ~ .radio_group_text::before {
+ background-image: url('../svg/form-circle.svg');
+}
+
+.radio {
+ position: absolute;
+ clip: rect(1px, 1px, 1px, 1px);
+ width: 1px;
+ height: 1px;
+}
+
+.textarea {
+ resize:none;
+ outline:none;
+ border: none;
+ width: 100%;
+ height: 131px;
+ background-color: #f4f7f6;
+}
+
+.field:focus {
+ background-color: #f4f7f6;
+ border: 1px solid #b59f5b;
+}
+
+.field {
+ opacity: 0.541;
+ font-size: 13px;
+ color: #000000;
+ font-weight: 400;
+ padding: 20px;
+}
+
+.button_popup {
+ font-size: 14px;
+ text-transform: uppercase;
+ color: #ffffff;
+ font-weight: 700;
+ width: 100%;
+ height: 48px;
+ border: none;
+ outline: none;
+ background-color: #b59f5b;
+ cursor: pointer;
+}
+
+.button_popup:hover {
+ width: 100%;
+ height: 48px;
+ background-color: #323232;
+}
+
 /*================HEADER================*/
 
 .header {
@@ -220,6 +415,7 @@ figure {
   margin-left: 19px;
   z-index: 1;
   margin-bottom: 17px;
+  margin-top: 17px;;
 }
 
 .trand_card_title {
@@ -705,7 +901,6 @@ figure {
 .shop_body {
   display: flex;
   flex-direction: column;
-  padding-top: 194px;
   background-repeat: no-repeat;
   margin-left: 23px;
   width: 300px;
@@ -713,18 +908,6 @@ figure {
 
 .shop_body:last-child {
   margin-right: 23px;
-}
-
-.shop_body-shop1 {
-    background-image: url('../images/shop-item-desk1.jpg');
-}
-
-.shop_body-shop2 {
-    background-image: url('../images/shop-item-desk2.jpg');
-}
-
-.shop_body-shop3 {
-    background-image: url('../images/shop-item-desk3.jpg');
 }
 
 .shop_subject {
@@ -891,6 +1074,31 @@ figure {
 
 @media (min-width: 641px) and (max-width: 1199px) {
  
+  /*================POPUP================*/
+
+.pop_up_conteiner {
+  height: 596px;
+}
+
+
+.pop_up_title {
+  font-size: 18px;
+}
+
+.pop_up_close {
+  width: 27px;
+  height: 27px;
+  background-size: 27px;
+  top: -34px;
+}
+
+.radio_group_text::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-size: 23px;
+}
+
   /*================HEADER================*/
 
 .header {
@@ -1112,7 +1320,6 @@ figure {
 
 .shop_body {
   display: flex;
-  padding-top: 214px;
   background-repeat: no-repeat;
   margin-left: 23px;
   width: 292px;
@@ -1127,24 +1334,13 @@ figure {
   margin-right: 23px;
 }
 
-.shop_body-shop1 {
-    background-image: url('../images/shop-item-tablet1.jpg');
-}
-
-.shop_body-shop2 {
-    background-image: url('../images/shop-item-tablet2.jpg');
-}
-
-.shop_body-shop3 {
-    background-image: url('../images/shop-item-tablet3.jpg');
-}
-
 .shop_subject {
   outline: 3px solid #b59f5b;
   outline-offset: 20px;
   flex-grow: 1;
   width: 292px;
   min-height: 214px; 
+  margin-top: -10px;
 }
 
 .shop_card_content {
@@ -1177,6 +1373,48 @@ figure {
 }
 
 @media (max-width: 640px) {
+
+/*================POPUP================*/
+
+.pop_up_conteiner {
+  width: 331px;
+  height: 546px;
+}
+
+.pop_up_body {
+  padding: 30px 22px 30px 26px;
+}
+
+.pop_up_title {
+  font-size: 16px;
+}
+
+.pop_up_close {
+  width: 27px;
+  height: 27px;
+  background-size: 27px;
+  top: -34px;
+}
+
+.form_group:not(:last-child) {
+  margin-bottom: 23px;
+}  
+  
+.radio_group_text::before {
+  width: 23px;
+  height: 23px;
+  background-size: 23px;
+}
+
+.field {
+  opacity: 0.541;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+  padding: 20px;
+}
+
+
 /*================HEADER================*/
 
 .header {
@@ -1352,6 +1590,7 @@ figure {
 
 .headline_news_text {
   font-size: 16px;
+  width: 100%;
 }
 
 .date_author {
@@ -1474,7 +1713,6 @@ figure {
 
 .shop_body {
   display: flex;
-  padding-top: 272px;
   background-repeat: no-repeat;
   margin-left: 23px;
   width: 292px;
@@ -1493,21 +1731,10 @@ figure {
   margin-right: 0;
 }
 
-.shop_body-shop1 {
-    background-image: url('../images/shop-item-mobile1.jpg');
-}
-
-.shop_body-shop2 {
-    background-image: url('../images/shop-item-mobile2.jpg');
-}
-
-.shop_body-shop3 {
-    background-image: url('../images/shop-item-mobile3.jpg');
-}
-
 .shop_subject {
   width: 284px;
   min-height: 180px; 
+  margin-top: -10px;
 }
 
 .shop_card_content {
