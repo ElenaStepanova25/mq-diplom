@@ -61,14 +61,14 @@ figure {
  justify-content: center;
 }
 
-.pop-up_conteiner {
+.pop-up-conteiner {
  display: flex;
  width: 390px;
  height: 589px;
  position: relative;
 }
 
-.pop-up_body {
+.pop-up-body {
  margin: auto auto;
  width: 100%;
  height: 100%;
@@ -81,7 +81,7 @@ figure {
  margin-bottom: 30px;
 }
 
-.pop-up_title {
+.pop-up-title {
  font-size: 20px;
  text-transform: uppercase;
  color: #0f0d0e;
@@ -91,7 +91,7 @@ figure {
  margin: auto auto;
 }
 
-.pop-up_title::after {
+.pop-up-title::after {
  content: "";
  display: block;
  opacity: 0.4;
@@ -103,7 +103,7 @@ figure {
  margin-bottom: 30px;
 }
 
-.pop-up_close {
+.pop-up-close {
  width: 18px;
  height: 18px;
  border: 0;
@@ -116,20 +116,20 @@ figure {
  top: -25px;
 }
 
-.pop-up_close_form {
+.pop-up-close-form {
  display: none;
 }
 
 .select-label,
 .radio-text,
-.radio-group_text,
+.radio-group-text,
 .field-label{
  font-size: 13px;
  color: #000000;
  font-weight: 400;
 }
 
-.radio-group_text {
+.radio-group-text {
  padding-right: 10px; 
 }
 
@@ -167,7 +167,7 @@ figure {
  border: 1px solid #b59f5b;
 }
 
-.radio-group_text::before {
+.radio-group-text::before {
  content: "";
  display: inline-block;
  width: 15px;
@@ -180,7 +180,7 @@ figure {
  vertical-align: middle;
 }
 
-.radio:checked ~ .radio-group_text::before {
+.radio:checked ~ .radio-group-text::before {
  background-image: url('../svg/form-circle.svg');
 }
 
@@ -276,7 +276,7 @@ figure {
   width: 179px;
 }
 
-.menu-list_btn {
+.menu-list-btn {
   color: #fff;
   font-size: 13px;
   text-transform: uppercase;
@@ -286,7 +286,7 @@ figure {
   display: none;
 }
 
-.menu-button_text {
+.menu-button-text {
   display: none;
 }
 
@@ -321,13 +321,13 @@ figure {
   text-align: center;
 }
 
-/*================TRANDE_CONTENT================*/
+/*================TRANDE-CONTENT================*/
 
 .trande-content {
   margin-top: 64px;
 }
 
-.trande-content_title {
+.trande-content-title {
   font-size: 20px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -337,7 +337,7 @@ figure {
   margin: auto auto;
 }
 
-.trande-content_title::after {
+.trande-content-title::after {
   content: "";
   display: block;
   opacity: 0.400;
@@ -402,7 +402,7 @@ figure {
     background-image: url('../images/trend4.jpg');
 }
 
-.trand-card_subject {
+.trand-card-subject {
   border: 3px solid #b59f5b;
   padding: 38px 24px;
   position: relative;
@@ -413,7 +413,7 @@ figure {
   margin-top: 17px;;
 }
 
-.trand-card_title {
+.trand-card-title {
   display: flex;
 }
 
@@ -432,7 +432,7 @@ figure {
   color: #b59f5b;
 }
 
-.trand-card_content {
+.trand-card-content {
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -443,7 +443,7 @@ figure {
 
 }
 
-.trand-card_content:hover {
+.trand-card-content:hover {
   color: #b59f5b;
 }
 
@@ -505,7 +505,7 @@ figure {
   color: #b59f5b;
 }
 
-.headline-news_text {
+.headline-news-text {
   width: 367px;
   padding-top: 5px;
   padding-right: 0;
@@ -517,7 +517,7 @@ figure {
   margin: 0;
 }
 
-.headline-news_text:hover {
+.headline-news-text:hover {
   color: #b59f5b;
 }
 
@@ -526,7 +526,7 @@ figure {
   padding-bottom: 50px;
 }
 
-.card-date_news {
+.card-date-news {
   font-size: 12px;
   color: #888888;
   font-weight: 400;
@@ -556,16 +556,16 @@ figure {
   width: 270px;
 }
 
-.side-bar_item {
+.side-bar-item {
   width: 100%;
   margin-bottom: 50px;
 }
 
-.side-bar_item:nth-child(4) {
+.side-bar-item:nth-child(4) {
   margin-bottom: 0;
 }
 
-.latest-post_title {
+.latest-post-title {
   font-size: 14px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -575,7 +575,7 @@ figure {
   margin: auto auto;
 }
 
-.latest-post_title::after {
+.latest-post-title::after {
   content: "";
   display: block;
   opacity: 0.400;
@@ -593,7 +593,7 @@ figure {
   display: flex;
 }
 
-.mini-card_image {
+.mini-card-image {
   width: 70px;
   height: 70px;
   background-color: #f4f7f6;
@@ -684,7 +684,7 @@ figure {
   background-color: #323232;
 }
 
-.search-btn_form {
+.search-btn-form {
   display: none;
 }
 
@@ -711,7 +711,7 @@ figure {
   margin-bottom: 23px;
 } 
 
-.search-group_form {
+.search-group-form {
   display: none;
 }
 
@@ -743,7 +743,7 @@ figure {
   border: 1px solid #b59f5b;
 }
 
-.subscribe-form_btn {
+.subscribe-form-btn {
   font-size: 14px;
   line-height: 3;
   text-transform: uppercase;
@@ -757,7 +757,7 @@ figure {
   cursor: pointer;
 }
 
-.subscribe-form_btn:hover {
+.subscribe-form-btn:hover {
   width: 100%;
   height: 48px;
   background-color: #323232;
@@ -846,7 +846,7 @@ figure {
   font-weight: 700;
 }
 
-.categories-up_text {
+.categories-up-text {
   font-size: 12px;
   line-height: 3;
   color: #b59f5b;
@@ -854,7 +854,7 @@ figure {
   vertical-align: super;
 }
 
-.categories-list_item {
+.categories-list-item {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -865,7 +865,7 @@ figure {
   margin: auto auto;
 }
 
-.shop-content_title {
+.shop-content-title {
   font-size: 20px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -875,7 +875,7 @@ figure {
   margin: auto auto;
 }
 
-.shop-content_title::after {
+.shop-content-title::after {
   content: "";
   display: block;
   opacity: 0.400;
@@ -913,11 +913,11 @@ figure {
   min-height: 237px; 
 }
 
-.shop-card_content {
+.shop-card-content {
   margin-top: 35px;  
 }
 
-.shop-card_title {
+.shop-card-title {
   font-size: 20px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -925,25 +925,25 @@ figure {
   padding-bottom: 13px;
 }
 
-.shop-card_text {
+.shop-card-text {
   font-size: 15px;
   line-height: 1.5;
   color: #0f0d0e;
   font-weight: 400;
 }
 
-.shop-card_text:hover {
+.shop-card-text:hover {
    font-weight: 700;
 }
 
-.shop-card_link {
+.shop-card-link {
   font-size: 15px;
   line-height: 1.5;
   color: #b59f5b;
   font-weight: 400;
 }
 
-.shop-card_link:hover {
+.shop-card-link:hover {
   text-decoration: underline;
   font-size: 15px;
   line-height: 1.5;
@@ -966,7 +966,7 @@ figure {
   font-weight: 700;
 }
 
-.shop-price_old {
+.shop-price-old {
   text-decoration: line-through;
   font-size: 14px;
   text-transform: uppercase;
@@ -1038,15 +1038,15 @@ figure {
   background-size: 20px;
 }
 
-.social-icon_dribbble {
+.social-icon-dribbble {
   background-image: url('../svg/001-dribbble.svg');
 }
 
-.social-icon_pinterest {
+.social-icon-pinterest {
    background-image: url('../svg/001-pinterest.svg');
 }
 
-.social-icon_tumblr {
+.social-icon-tumblr {
   background-image: url('../svg/003-tumblr.svg');
 }
 
@@ -1075,23 +1075,23 @@ figure {
   display: none;
 }
 
-.pop-up_conteiner {
+.pop-up-conteiner {
   height: 596px;
 }
 
 
-.pop-up_title {
+.pop-up-title {
   font-size: 18px;
 }
 
-.pop-up_close {
+.pop-up-close {
   width: 27px;
   height: 27px;
   background-size: 27px;
   top: -34px;
 }
 
-.radio-group_text::before {
+.radio-group-text::before {
   content: "";
   width: 23px;
   height: 23px;
@@ -1134,11 +1134,11 @@ figure {
   position: relative;
 }
 
-.menu-button_text {
+.menu-button-text {
   display: none;
 }
 
-.menu-list_btn {
+.menu-list-btn {
   width: 698px;
   max-height: 0;
   overflow: hidden;
@@ -1149,7 +1149,7 @@ figure {
   margin: auto auto;
 }
 
-#menu-button:checked ~ .menu-list_btn {
+#menu-button:checked ~ .menu-list-btn {
   display: block;
   max-height: 100%;
 }
@@ -1164,13 +1164,13 @@ figure {
   line-height: 1.4;
 }
 
-/*================TRANDE_CONTENT================*/
+/*================TRANDE-CONTENT================*/
 
 .trande-content {
   margin-top: 50px;
 }
 
-.trande-content_title {
+.trande-content-title {
   font-size: 18px;
 }
 
@@ -1203,7 +1203,7 @@ figure {
   margin-right: 0;
 }
 
-.trand-card_subject {
+.trand-card-subject {
   margin-bottom: 10px;
 }
 
@@ -1211,7 +1211,7 @@ figure {
   margin-right: 3px;
 }
 
-.trand-card_content {
+.trand-card-content {
   font-size: 17px;
   line-height: 1.2;
   padding-top: 5px;
@@ -1266,7 +1266,7 @@ figure {
   padding-right: 15px;
 }
 
-.headline-news_text {
+.headline-news-text {
   width: 100%;
   padding-top: 12px;
   padding-right: 0;
@@ -1303,11 +1303,11 @@ figure {
   width: 698px;
 }
 
-.shop-content_title {
+.shop-content-title {
   font-size: 18px;
 }
 
-.shop-content_title::after {
+.shop-content-title::after {
   margin-bottom: 26px; 
 } 
 
@@ -1342,11 +1342,11 @@ figure {
   margin-top: -10px;
 }
 
-.shop-card_content {
+.shop-card-content {
   margin-top: 32px; 
 }
 
-.shop-card_title {
+.shop-card-title {
   font-size: 17px;
   padding-bottom: 5px;
 }
@@ -1379,20 +1379,20 @@ figure {
   display: none;
 }
 
-.pop-up_conteiner {
+.pop-up-conteiner {
   width: 331px;
   height: 546px;
 }
 
-.pop-up_body {
+.pop-up-body {
   padding: 30px 22px 30px 26px;
 }
 
-.pop-up_title {
+.pop-up-title {
   font-size: 16px;
 }
 
-.pop-up_close {
+.pop-up-close {
   width: 27px;
   height: 27px;
   background-size: 27px;
@@ -1403,7 +1403,7 @@ figure {
   margin-bottom: 23px;
 }  
   
-.radio-group_text::before {
+.radio-group-text::before {
   width: 23px;
   height: 23px;
   background-size: 23px;
@@ -1470,11 +1470,11 @@ figure {
   position: relative;
 }
 
-.menu-button_text {
+.menu-button-text {
   display: none;
 }
 
-.menu-list_btn {
+.menu-list-btn {
   width: 698px;
   overflow: hidden;
   position: absolute;
@@ -1484,7 +1484,7 @@ figure {
   margin: auto auto;
 }
 
-#menu-button:checked ~ .menu-list_btn {
+#menu-button:checked ~ .menu-list-btn {
   display: block;
   max-height: 100%;
 }
@@ -1500,14 +1500,14 @@ figure {
   padding-top: 5px;
 }
 
-/*================TRANDE_CONTENT================*/
+/*================TRANDE-CONTENT================*/
 
 .trande-content {
   margin-top: 45px;
   margin-bottom: 45px;;
 }
 
-.trande-content_title {
+.trande-content-title {
   font-size: 16px;
 }
 
@@ -1522,7 +1522,7 @@ figure {
   min-height: 232px;
 }
 
-.trand-card_subject {
+.trand-card-subject {
   padding: 30px 21px;
 }
 
@@ -1535,7 +1535,7 @@ figure {
   margin-bottom: 3px;
 }
 
-.trand-card_content {
+.trand-card-content {
   font-size: 17px;
   line-height: 1.3;
 }
@@ -1591,7 +1591,7 @@ figure {
   padding-right: 20px;
 }
 
-.headline-news_text {
+.headline-news-text {
   font-size: 16px;
   width: 100%;
 }
@@ -1628,16 +1628,16 @@ figure {
   margin-top: 6px;
 }
 
-.side-bar_item {
+.side-bar-item {
   width: 100%;
   margin-bottom: 37px;
 }
 
-.latest-post_title {
+.latest-post-title {
   font-size: 16px;
 }
 
-.latest-post_title::after {
+.latest-post-title::after {
   content: "";
   margin-bottom: 17px; 
   margin-top: 10px;
@@ -1700,11 +1700,11 @@ figure {
   width: 330px;
 }
 
-.shop-content_title {
+.shop-content-title {
   font-size: 16px;
 }
 
-.shop-content_title::after {
+.shop-content-title::after {
   margin-bottom: 26px; 
 } 
 
@@ -1740,11 +1740,11 @@ figure {
   margin-top: -10px;
 }
 
-.shop-card_content {
+.shop-card-content {
   margin-top: 30px; 
 }
 
-.shop-card_title {
+.shop-card-title {
   font-size: 17px;
   padding-bottom: 11px;
 }
